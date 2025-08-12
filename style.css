@@ -1,0 +1,50 @@
+.carousel-inner img {
+        height: 500px;       /* Fixed height */
+        object-fit: cover;   /* Crop image to fill */
+    }
+
+    .category-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category-card img {
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+}
+
+.category-card:hover::after {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #343a40; /* Dark theme hover */
+    color: white;
+  }
+
+  /* Change hover effect for nav links */
+  .nav-link:hover {
+    color: #ffcc00 !important; /* Gold hover */
+  }
+
+  /* Keep dropdown same style as navbar */
+  .dropdown-menu {
+    background-color: #212529;
+    border: none;
+  }
+
+  .dropdown-item {
+    color: white;
+  }
